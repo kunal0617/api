@@ -11,7 +11,7 @@ const searchRoute = require("./routes/search");
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect(mongodb+srv://kunal:kunal@cluster0.mc658.mongodb.net/netflix?retryWrites=true&w=majority, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
